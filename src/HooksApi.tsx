@@ -21,7 +21,7 @@ const HooksApi: FunctionComponent = () => {
   const handleOnPress = useOnStepChange(step => {
     switch (step) {
       case 1: {
-        setTranslateY(-150);
+        setTranslateY(-100);
         setOpacity(1);
         return;
       }
@@ -45,7 +45,7 @@ const HooksApi: FunctionComponent = () => {
       </Typography>
       <Animated.Image
         resizeMode="contain"
-        style={{ opacity, width: '85%', maxHeight: '50%', transform: [{ translateY }] }}
+        style={{ opacity, width: '95%', maxHeight: '70%', transform: [{ translateY }] }}
         source={HooksCode}
       />
       <Animated.View style={{ position: 'absolute', bottom: 100, opacity: exampleOpacity }}>

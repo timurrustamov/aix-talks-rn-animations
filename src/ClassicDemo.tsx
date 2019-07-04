@@ -22,7 +22,8 @@ const ClassicDemo: FunctionComponent = () => {
       <ImperativeDemo scale={scale} />
       <Slider
         style={{ position: 'absolute', bottom: 200, width: dimensions.width - 100 }}
-        minimumValue={1}
+        value={scale}
+        minimumValue={0.5}
         maximumValue={4}
         step={0.1}
         onValueChange={e => setScale(e)}
